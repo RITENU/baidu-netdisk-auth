@@ -1,356 +1,71 @@
-
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:x="urn:schemas-microsoft-com:office:excel"
-xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
-xmlns="http://www.w3.org/TR/REC-html40">
-
+<!doctype html>
+<html lang="zh-CN">
 <head>
-<meta name="Excel Workbook Frameset">
-<meta http-equiv=Content-Type content="text/html; charset=gb2312">
-<meta name=ProgId content=Excel.Sheet>
-<meta name=Generator content="Microsoft Excel 15">
-<link rel=File-List href="天猫88会员日.files/filelist.xml">
-<![if !supportTabStrip]>
-<link id="shLink" href="天猫88会员日.files/sheet001.htm">
-<link id="shLink" href="天猫88会员日.files/sheet002.htm">
-<link id="shLink" href="天猫88会员日.files/sheet003.htm">
-<link id="shLink" href="天猫88会员日.files/sheet004.htm">
-<link id="shLink" href="天猫88会员日.files/sheet005.htm">
-<link id="shLink" href="天猫88会员日.files/sheet006.htm">
-
-<link id="shLink">
-
-<script language="JavaScript">
-<!--
- var c_lTabs=6;
-
- var c_rgszSh=new Array(c_lTabs);
- c_rgszSh[0] = "天猫88会员日节奏";
- c_rgszSh[1] = "日常";
- c_rgszSh[2] = "Sheet2";
- c_rgszSh[3] = "Sheet1";
- c_rgszSh[4] = "95折";
- c_rgszSh[5] = "88套装特价";
-
-
-
- var c_rgszClr=new Array(8);
- c_rgszClr[0]="window";
- c_rgszClr[1]="buttonface";
- c_rgszClr[2]="windowframe";
- c_rgszClr[3]="windowtext";
- c_rgszClr[4]="threedlightshadow";
- c_rgszClr[5]="threedhighlight";
- c_rgszClr[6]="threeddarkshadow";
- c_rgszClr[7]="threedshadow";
-
- var g_iShCur;
- var g_rglTabX=new Array(c_lTabs);
-
-function fnGetIEVer()
-{
- var ua=window.navigator.userAgent
- var msie=ua.indexOf("MSIE")
- if (msie>0 && window.navigator.platform=="Win32")
-  return parseInt(ua.substring(msie+5,ua.indexOf(".", msie)));
- else
-  return 0;
-}
-
-function fnBuildFrameset()
-{
- var szHTML="<frameset rows=\"*,18\" border=0 width=0 frameborder=no framespacing=0>"+
-  "<frame src=\""+document.all.item("shLink")[0].href+"\" name=\"frSheet\" noresize>"+
-  "<frameset cols=\"54,*\" border=0 width=0 frameborder=no framespacing=0>"+
-  "<frame src=\"\" name=\"frScroll\" marginwidth=0 marginheight=0 scrolling=no>"+
-  "<frame src=\"\" name=\"frTabs\" marginwidth=0 marginheight=0 scrolling=no>"+
-  "</frameset></frameset><plaintext>";
-
- with (document) {
-  open("text/html","replace");
-  write(szHTML);
-  close();
- }
-
- fnBuildTabStrip();
-}
-
-function fnBuildTabStrip()
-{
- var szHTML=
-  "<html><head><style>.clScroll {font:8pt Courier New;color:"+c_rgszClr[6]+";cursor:default;line-height:10pt;}"+
-  ".clScroll2 {font:10pt Arial;color:"+c_rgszClr[6]+";cursor:default;line-height:11pt;}</style></head>"+
-  "<body onclick=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" onselectstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+" topmargin=0 leftmargin=0><table cellpadding=0 cellspacing=0 width=100%>"+
-  "<tr><td colspan=6 height=1 bgcolor="+c_rgszClr[2]+"></td></tr>"+
-  "<tr><td style=\"font:1pt\">&nbsp;<td>"+
-  "<td valign=top id=tdScroll class=\"clScroll\" onclick=\"parent.fnFastScrollTabs(0);\" onmouseover=\"parent.fnMouseOverScroll(0);\" onmouseout=\"parent.fnMouseOutScroll(0);\"><a>&#171;</a></td>"+
-  "<td valign=top id=tdScroll class=\"clScroll2\" onclick=\"parent.fnScrollTabs(0);\" ondblclick=\"parent.fnScrollTabs(0);\" onmouseover=\"parent.fnMouseOverScroll(1);\" onmouseout=\"parent.fnMouseOutScroll(1);\"><a>&lt</a></td>"+
-  "<td valign=top id=tdScroll class=\"clScroll2\" onclick=\"parent.fnScrollTabs(1);\" ondblclick=\"parent.fnScrollTabs(1);\" onmouseover=\"parent.fnMouseOverScroll(2);\" onmouseout=\"parent.fnMouseOutScroll(2);\"><a>&gt</a></td>"+
-  "<td valign=top id=tdScroll class=\"clScroll\" onclick=\"parent.fnFastScrollTabs(1);\" onmouseover=\"parent.fnMouseOverScroll(3);\" onmouseout=\"parent.fnMouseOutScroll(3);\"><a>&#187;</a></td>"+
-  "<td style=\"font:1pt\">&nbsp;<td></tr></table></body></html>";
-
- with (frames['frScroll'].document) {
-  open("text/html","replace");
-  write(szHTML);
-  close();
- }
-
- szHTML =
-  "<html><head>"+
-  "<style>A:link,A:visited,A:active {text-decoration:none;"+"color:"+c_rgszClr[3]+";}"+
-  ".clTab {cursor:hand;background:"+c_rgszClr[1]+";font:9pt 宋体;padding-left:3px;padding-right:3px;text-align:center;}"+
-  ".clBorder {background:"+c_rgszClr[2]+";font:1pt;}"+
-  "</style></head><body onload=\"parent.fnInit();\" onselectstart=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+
-  " topmargin=0 leftmargin=0><table id=tbTabs cellpadding=0 cellspacing=0>";
-
- var iCellCount=(c_lTabs+1)*2;
-
- var i;
- for (i=0;i<iCellCount;i+=2)
-  szHTML+="<col width=1><col>";
-
- var iRow;
- for (iRow=0;iRow<6;iRow++) {
-
-  szHTML+="<tr>";
-
-  if (iRow==5)
-   szHTML+="<td colspan="+iCellCount+"></td>";
-  else {
-   if (iRow==0) {
-    for(i=0;i<iCellCount;i++)
-     szHTML+="<td height=1 class=\"clBorder\"></td>";
-   } else if (iRow==1) {
-    for(i=0;i<c_lTabs;i++) {
-     szHTML+="<td height=1 nowrap class=\"clBorder\">&nbsp;</td>";
-     szHTML+=
-      "<td id=tdTab height=1 nowrap class=\"clTab\" onmouseover=\"parent.fnMouseOverTab("+i+");\" onmouseout=\"parent.fnMouseOutTab("+i+");\">"+
-      "<a href=\""+document.all.item("shLink")[i].href+"\" target=\"frSheet\" id=aTab>&nbsp;"+c_rgszSh[i]+"&nbsp;</a></td>";
-    }
-    szHTML+="<td id=tdTab height=1 nowrap class=\"clBorder\"><a id=aTab>&nbsp;</a></td><td width=100%></td>";
-   } else if (iRow==2) {
-    for (i=0;i<c_lTabs;i++)
-     szHTML+="<td height=1></td><td height=1 class=\"clBorder\"></td>";
-    szHTML+="<td height=1></td><td height=1></td>";
-   } else if (iRow==3) {
-    for (i=0;i<iCellCount;i++)
-     szHTML+="<td height=1></td>";
-   } else if (iRow==4) {
-    for (i=0;i<c_lTabs;i++)
-     szHTML+="<td height=1 width=1></td><td height=1></td>";
-    szHTML+="<td height=1 width=1></td><td></td>";
-   }
-  }
-  szHTML+="</tr>";
- }
-
- szHTML+="</table></body></html>";
- with (frames['frTabs'].document) {
-  open("text/html","replace");
-  charset=document.charset;
-  write(szHTML);
-  close();
- }
-}
-
-function fnInit()
-{
- g_rglTabX[0]=0;
- var i;
- for (i=1;i<=c_lTabs;i++)
-  with (frames['frTabs'].document.all.tbTabs.rows[1].cells[fnTabToCol(i-1)])
-   g_rglTabX[i]=offsetLeft+offsetWidth-6;
-}
-
-function fnTabToCol(iTab)
-{
- return 2*iTab+1;
-}
-
-function fnNextTab(fDir)
-{
- var iNextTab=-1;
- var i;
-
- with (frames['frTabs'].document.body) {
-  if (fDir==0) {
-   if (scrollLeft>0) {
-    for (i=0;i<c_lTabs&&g_rglTabX[i]<scrollLeft;i++);
-    if (i<c_lTabs)
-     iNextTab=i-1;
-   }
-  } else {
-   if (g_rglTabX[c_lTabs]+6>offsetWidth+scrollLeft) {
-    for (i=0;i<c_lTabs&&g_rglTabX[i]<=scrollLeft;i++);
-    if (i<c_lTabs)
-     iNextTab=i;
-   }
-  }
- }
- return iNextTab;
-}
-
-function fnScrollTabs(fDir)
-{
- var iNextTab=fnNextTab(fDir);
-
- if (iNextTab>=0) {
-  frames['frTabs'].scroll(g_rglTabX[iNextTab],0);
-  return true;
- } else
-  return false;
-}
-
-function fnFastScrollTabs(fDir)
-{
- if (c_lTabs>16)
-  frames['frTabs'].scroll(g_rglTabX[fDir?c_lTabs-1:0],0);
- else
-  if (fnScrollTabs(fDir)>0) window.setTimeout("fnFastScrollTabs("+fDir+");",5);
-}
-
-function fnSetTabProps(iTab,fActive)
-{
- var iCol=fnTabToCol(iTab);
- var i;
-
- if (iTab>=0) {
-  with (frames['frTabs'].document.all) {
-   with (tbTabs) {
-    for (i=0;i<=4;i++) {
-     with (rows[i]) {
-      if (i==0)
-       cells[iCol].style.background=c_rgszClr[fActive?0:2];
-      else if (i>0 && i<4) {
-       if (fActive) {
-        cells[iCol-1].style.background=c_rgszClr[2];
-        cells[iCol].style.background=c_rgszClr[0];
-        cells[iCol+1].style.background=c_rgszClr[2];
-       } else {
-        if (i==1) {
-         cells[iCol-1].style.background=c_rgszClr[2];
-         cells[iCol].style.background=c_rgszClr[1];
-         cells[iCol+1].style.background=c_rgszClr[2];
-        } else {
-         cells[iCol-1].style.background=c_rgszClr[4];
-         cells[iCol].style.background=c_rgszClr[(i==2)?2:4];
-         cells[iCol+1].style.background=c_rgszClr[4];
-        }
-       }
-      } else
-       cells[iCol].style.background=c_rgszClr[fActive?2:4];
-     }
-    }
-   }
-   with (aTab[iTab].style) {
-    cursor=(fActive?"default":"hand");
-    color=c_rgszClr[3];
-   }
-  }
- }
-}
-
-function fnMouseOverScroll(iCtl)
-{
- frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[7];
-}
-
-function fnMouseOutScroll(iCtl)
-{
- frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[6];
-}
-
-function fnMouseOverTab(iTab)
-{
- if (iTab!=g_iShCur) {
-  var iCol=fnTabToCol(iTab);
-  with (frames['frTabs'].document.all) {
-   tdTab[iTab].style.background=c_rgszClr[5];
-  }
- }
-}
-
-function fnMouseOutTab(iTab)
-{
- if (iTab>=0) {
-  var elFrom=frames['frTabs'].event.srcElement;
-  var elTo=frames['frTabs'].event.toElement;
-
-  if ((!elTo) ||
-   (elFrom.tagName==elTo.tagName) ||
-   (elTo.tagName=="A" && elTo.parentElement!=elFrom) ||
-   (elFrom.tagName=="A" && elFrom.parentElement!=elTo)) {
-
-   if (iTab!=g_iShCur) {
-    with (frames['frTabs'].document.all) {
-     tdTab[iTab].style.background=c_rgszClr[1];
-    }
-   }
-  }
- }
-}
-
-function fnSetActiveSheet(iSh)
-{
- if (iSh!=g_iShCur) {
-  fnSetTabProps(g_iShCur,false);
-  fnSetTabProps(iSh,true);
-  g_iShCur=iSh;
- }
-}
-
- window.g_iIEVer=fnGetIEVer();
- if (window.g_iIEVer>=4)
-  fnBuildFrameset();
-//-->
-</script>
-<![endif]><!--[if gte mso 9]><xml>
- <x:ExcelWorkbook>
-  <x:ExcelWorksheets>
-   <x:ExcelWorksheet>
-    <x:Name>天猫88会员日节奏</x:Name>
-    <x:WorksheetSource HRef="天猫88会员日.files/sheet001.htm"/>
-   </x:ExcelWorksheet>
-   <x:ExcelWorksheet>
-    <x:Name>日常</x:Name>
-    <x:WorksheetSource HRef="天猫88会员日.files/sheet002.htm"/>
-   </x:ExcelWorksheet>
-   <x:ExcelWorksheet>
-    <x:Name>Sheet2</x:Name>
-    <x:WorksheetSource HRef="天猫88会员日.files/sheet003.htm"/>
-   </x:ExcelWorksheet>
-   <x:ExcelWorksheet>
-    <x:Name>Sheet1</x:Name>
-    <x:WorksheetSource HRef="天猫88会员日.files/sheet004.htm"/>
-   </x:ExcelWorksheet>
-   <x:ExcelWorksheet>
-    <x:Name>95折</x:Name>
-    <x:WorksheetSource HRef="天猫88会员日.files/sheet005.htm"/>
-   </x:ExcelWorksheet>
-   <x:ExcelWorksheet>
-    <x:Name>88套装特价</x:Name>
-    <x:WorksheetSource HRef="天猫88会员日.files/sheet006.htm"/>
-   </x:ExcelWorksheet>
-  </x:ExcelWorksheets>
-  <x:Stylesheet HRef="天猫88会员日.files/stylesheet.css"/>
-  <x:WindowHeight>12456</x:WindowHeight>
-  <x:WindowWidth>23256</x:WindowWidth>
-  <x:WindowTopX>32767</x:WindowTopX>
-  <x:WindowTopY>32767</x:WindowTopY>
-  <x:ProtectStructure>False</x:ProtectStructure>
-  <x:ProtectWindows>False</x:ProtectWindows>
- </x:ExcelWorkbook>
-</xml><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="个人百度网盘 MCP 工具的静态说明页。保留原有页面地址，不收集或处理授权信息。">
+  <title>百度网盘 MCP · 使用说明</title>
+  <style>
+    :root{color-scheme:light;--ink:#152c38;--muted:#536672;--line:#dce6e7;--accent:#176d68;--paper:#f3f7f5}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}
+    main{max-width:900px;margin:0 auto;padding:64px 28px 36px}
+    .eyebrow{display:flex;align-items:center;gap:10px;color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.12em}
+    .mark{display:inline-grid;place-items:center;width:32px;height:32px;border:1px solid #a8cac3;border-radius:10px;font-size:17px;letter-spacing:0}
+    .tag{display:inline-block;margin-top:36px;padding:5px 12px;border-radius:20px;background:#e2eee9;color:#275f55;font-size:12px}
+    h1{margin:16px 0 14px;font-size:clamp(34px,6vw,58px);font-weight:700;letter-spacing:-.04em;line-height:1.2}
+    .intro{max-width:650px;margin:0;color:var(--muted);font-size:17px}
+    .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:38px}
+    section{padding:25px;background:#fff;border:1px solid var(--line);border-radius:18px}
+    .number{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.1em}
+    h2{margin:7px 0 10px;font-size:19px;line-height:1.5}
+    p{margin:0}
+    section p{color:var(--muted);font-size:14px}
+    .notice{margin-top:16px;background:#eaf1ee}
+    .notice h2{font-size:16px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    a{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+    .button{display:inline-block;padding:10px 18px;background:var(--ink);border:1px solid var(--ink);border-radius:10px;color:white;font-size:14px;font-weight:600;text-decoration:none}
+    .secondary{background:transparent;color:var(--ink);border-color:#bacbc9}
+    a:focus-visible{outline:3px solid #399e90;outline-offset:5px}
+    footer{margin-top:42px;padding-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+    @media(max-width:600px){main{padding:36px 20px 28px}.cards{grid-template-columns:1fr;margin-top:28px}section{padding:22px}.tag{margin-top:26px}}
+  </style>
 </head>
-
-<frameset rows="*,39" border=0 width=0 frameborder=no framespacing=0>
- <frame src="天猫88会员日.files/sheet001.htm" name="frSheet">
- <frame src="天猫88会员日.files/tabstrip.htm" name="frTabs" marginwidth=0 marginheight=0>
- <noframes>
-  <body>
-   <p>此页面使用了框架，而您的浏览器不支持框架。</p>
-  </body>
- </noframes>
-</frameset>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow"><span class="mark" aria-hidden="true">盘</span> PERSONAL TOOL · MCP</div>
+      <span class="tag">静态说明页 · 原地址保留</span>
+      <h1>百度网盘 MCP<br>使用说明</h1>
+      <p class="intro">用于个人网盘目录查询与文件名搜索的相关说明。旧活动表格已清理，这个页面继续保留原有访问地址。</p>
+    </header>
+    <div class="cards">
+      <section aria-labelledby="usage">
+        <span class="number">01 / 使用</span>
+        <h2 id="usage">在已连接的助手中查询</h2>
+        <p>请在 ChatGPT 中使用已配置的百度网盘只读助手。实际连接状态以助手的提示和查询结果为准；本页不检测或展示实时授权状态。</p>
+      </section>
+      <section aria-labelledby="auth">
+        <span class="number">02 / 授权</span>
+        <h2 id="auth">按原有安全流程操作</h2>
+        <p>需要连接或重新授权时，请从 ChatGPT 内已配置的助手入口开始，并核对百度官方授权页面。本页不是登录页，不接收或处理授权回调。</p>
+      </section>
+    </div>
+    <section class="notice" aria-labelledby="security">
+      <h2 id="security">不在此处填写任何凭据</h2>
+      <p>本页没有输入表单、脚本或自动跳转，不读取、展示或转发网址中的授权码与令牌，也不保存密码、应用密钥或网盘数据。请勿将这些信息发布到仓库、截图或聊天中。</p>
+    </section>
+    <nav class="actions" aria-label="相关入口">
+      <a class="button" href="https://chatgpt.com/" rel="noreferrer">打开 ChatGPT ↗</a>
+      <a class="button secondary" href="https://pan.baidu.com/" rel="noreferrer">百度网盘官网 ↗</a>
+    </nav>
+    <footer>
+      <p>个人工具说明页面，非百度官方页面。此页更新不更改助手的授权配置。</p>
+      <p>页面内容更新：2026-10-04 · 保留地址：ritenu.github.io/myhtml/</p>
+    </footer>
+  </main>
+</body>
 </html>
